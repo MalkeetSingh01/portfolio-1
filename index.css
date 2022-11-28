@@ -7,6 +7,9 @@
     margin: 0;
     font-family: Lora;
 }
+body{
+    width: 100vw !important;
+}
 html {
     /* font-size: 62.5%; */
     overflow-x: hidden;
@@ -30,9 +33,7 @@ html {
     /* justify-content:space-between;   */
     padding-bottom: 110px;
 }
-a{
-    text-decoration: none;
-}
+
 .a1 {
     /* border: 4px solid black; */
     margin: 10px auto;
@@ -104,7 +105,9 @@ a{
     color: rgba(0, 0, 255, 0.888);
 }
 /* skillls */
-
+a{
+    text-decoration: none;
+}
 #skills,#work-exp,#projects,#contact{
     padding: 1rem 1rem 4rem;
     width: 100vw;
@@ -197,6 +200,7 @@ a{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    margin-bottom: 1rem !important;
     justify-content: space-between;
 }
 .comapny-one {
@@ -295,7 +299,7 @@ a{
 .p1{
     position: relative;
     left: 2.2rem;
-    width:26%;
+    width:24rem;
     height:auto;
 }
 .p1 img{
@@ -437,6 +441,9 @@ input:focus{
 }
 /* media queries */
 @media (max-width:1100px) {
+    body{
+        width: 100% !important;
+    }
     #nav-bar {
         display: none;
     }
@@ -448,7 +455,14 @@ input:focus{
         width: 210px;
     }
     #name-id {
+        margin-top:1.6rem;
+        margin-bottom: 1rem !important;
         font-size: 4rem;
+    }
+    #intro{
+        width: 90%;
+        line-height: 29px;
+        font-style: 16px;
     }
     h2{
         font-size: 2rem;
@@ -458,14 +472,17 @@ input:focus{
     }
     #work-exp{
         margin-top: 3rem;
-        margin-bottom: 0px;
+        margin-bottom: 0px !important;
+    }
+    #work-exp img{
+        margin-left:1rem;
     }
     .comap1 img{
        height: 3rem;
        width: 3rem;
     }
     #projects{
-        margin-top: 0rem;
+        margin-top: 0rem  !important;
     }
     #section-exp {
         margin-top: 3rem;
@@ -477,7 +494,8 @@ input:focus{
         margin-top: 2rem
     }
     #slash{
-        margin: 2rem;
+        margin-top:2rem;
+        width: 100%;
         display: block;
     }
     #dividor,#address{
@@ -490,5 +508,18 @@ input:focus{
         margin-top: 1rem;
         width: 80%;
     } 
+    .comp1-work span{
+        /* display: none; */
+        font-size: 2rem;
+        text-align: center;
+    }
+    .comapny-one,.comp1-work{
+        width: 100%;
+    }
+    .url-2{
+        margin-left: 3rem;
+    }
+    .comp1{
+        display: none;
+    }
 }
-
