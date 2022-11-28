@@ -7,13 +7,13 @@
     margin: 0;
     font-family: Lora;
 }
-body{
-    width: 100vw !important;
-}
-html {
+html , body{
     /* font-size: 62.5%; */
     overflow-x: hidden;
+    /* min-width: 1167px; */
     scroll-padding-top: 6.5rem;
+    height: auto !important;
+    max-width:100% !important;
     scroll-behavior: smooth;
 }
 #sec-1 {
