@@ -7,14 +7,17 @@
     margin: 0;
     font-family: Lora;
 }
-html , body{
+html,body{
     /* font-size: 62.5%; */
-    overflow-x: hidden;
-    /* min-width: 1167px; */
-    scroll-padding-top: 6.5rem;
+    /* overflow-x: hidden; */
     height: auto !important;
     max-width:100% !important;
+    /* min-width: 1167px; */
+    scroll-padding-top: 6.5rem;
     scroll-behavior: smooth;
+}
+html{
+    overflow-x: hidden;
 }
 #sec-1 {
     /* max-width: 100vw !impor3nt;  */
@@ -255,21 +258,21 @@ a{
 
 /* dividor */
 #dividor{
+    display: inline-block;
     width:2px;
     box-shadow: 2px 2px rgb(198, 198, 198);
     background-color: rgb(174, 168, 168);
-    height:auto;
+    height: auto;
 }
 #dividor span{
     position: relative;
+    /* width:auto;
+    height:auto; */
     left:-1.36rem;
 }
 #dividor img{
-    position:sticky;
-    top: 2rem;
-    /* margin-right:2rem; */
-    /* right:12rem; */
-    /* position: relative; */
+    position:sticky !important;
+    top: 2rem !important;
     left: 2rem;
     transform: rotate(180deg);
 }
@@ -330,12 +333,14 @@ a{
     opacity: 0.9;
 }
 img:hover{
-    transform: scale(1.5)
+    transform: scale(1.2)
 }
 /*contact  */
 #contact{
-    margin: 0rem auto;
+    margin: 0rem auto !important;
+    height:auto;
     background-image: linear-gradient(#5c258d, #4389a2);
+    padding-bottom: 1rem !important;
 }
 #contact h2{
     color: rgb(245, 245, 245);
@@ -436,43 +441,61 @@ input:focus{
     top: 0.5rem;
 }
 .url-2{
-    /* margin-right: 3rem; */
+    display: flex;
+    justify-content: space-around;    
+    margin:1rem auto 0rem auto!important;
+    width: 30%;
+    position: relative;
+    left: 1.3rem;
     filter:invert(100%);
 }
 /* media queries */
 @media (max-width:1100px) {
-    body{
-        width: 100% !important;
+    html,body{
+        overflow-x: hidden;
     }
     #nav-bar {
         display: none;
     }
     #main-head {
-        height: 360px;
+        height: 300px;
     }
     #img-id {
         height: 210px;
         width: 210px;
     }
+    .skil-c {
+        /* border: 2px solid black; */
+        width: 16rem;
+        height: 2rem;
+        margin-bottom: 1rem !important;
+        font-size: 1rem;
+    }
+    #skill-sect{
+        margin-top: 1.2rem !important;
+    }
     #name-id {
         margin-top:1.6rem;
         margin-bottom: 1rem !important;
-        font-size: 4rem;
+        font-size: 3.4rem;
     }
-    #intro{
+    #intro, .para p{
         width: 90%;
         line-height: 29px;
-        font-style: 16px;
+        font-size: 16px !important;
+        font-weight: 400 !important;
+        /* margin-top:0rem !important; */
+        color:#202020 !important;
     }
     h2{
         font-size: 2rem;
     }
-    #section-exp {
-        margin-top: 3rem;
+    .para, #section-exp{
+        margin-top: 1rem !important;
     }
     #work-exp{
-        margin-top: 3rem;
-        margin-bottom: 0px !important;
+        margin-top: 0rem;
+        padding-bottom: 1rem !important;
     }
     #work-exp img{
         margin-left:1rem;
@@ -485,7 +508,8 @@ input:focus{
         margin-top: 0rem  !important;
     }
     #section-exp {
-        margin-top: 3rem;
+        width: 90%;
+        margin:2rem auto !important;
         flex-direction: column;
     }
     .comapny-one {
@@ -502,12 +526,18 @@ input:focus{
         display: none;
     }
     #con-sect{
+        margin: 0rem auto 1.7rem auto !important;
         flex-direction: column;
     }
     #con-sect div{
         margin-top: 1rem;
-        width: 80%;
+        width: 100%;
+        font-size: 1rem;
+        font-size:1rem !important;
     } 
+    #forms span input{
+        width: 80%;
+    }
     .comp1-work span{
         /* display: none; */
         font-size: 2rem;
@@ -516,10 +546,34 @@ input:focus{
     .comapny-one,.comp1-work{
         width: 100%;
     }
+    .p1 img{
+        margin-top: 1rem;
+    }
+    .p1 img:hover .p-id{
+        opacity: 1;
+        margin-top: 1rem;
+    }
+    .p1 img:hover{
+        opacity: 0.6;
+        transform: scale(1);
+    }
+    img:hover{
+        transform: scale(1) !important; 
+    }
     .url-2{
-        margin-left: 3rem;
+        /* justify-self:stretch; */
+        margin: 0rem auto !important;
+        /* padding-left:2rem; */
     }
     .comp1{
+        justify-content: space-around;
         display: none;
     }
+    #f1 span input,#submit{
+        font-size: 1rem;
+    }
+    #contact{
+        padding: 1rem !important;
+    }
 }
+
