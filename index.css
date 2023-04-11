@@ -113,6 +113,7 @@ html{
 /* skillls */
 a{
     text-decoration: none;
+    color: #151515;
 }
 #skills,#work-exp,#projects,#contact{
     padding: 1rem 1rem 4rem;
